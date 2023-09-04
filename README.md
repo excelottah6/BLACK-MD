@@ -1,15 +1,15 @@
 </p>
 <p align="center">
-  <a href="https://chat.whatsapp.com/JIJplkiYyrFE4dyFGade43">
-    <img alt=Support height="550" src="https://telegra.ph/file/9f8f9cc205e35e71f5ab8.jpg"> 
+  <a href="https://chat.whatsapp.com/HBCXDp3HIb8GzHBBg6MplO)">
+    <img alt=Support height="550" src="https://telegra.ph/file/38b2287de9e0f6b8ecab1.jpg"> 
     </p>
-<h1 align="center"> KING-MULTIDEVICE (Beta)
+<h1 align="center"> BLACK-MD MULTI DEVICE BOT
 </h1>
 <p align="center"> 
- ! I Am A Whatsapp Bot Create By Naveed Dogar and recode by Team KING-MD To Do Everything That Is Possible On WhatsApp Based On WhatsApp Multi Device(MD) Support.
+ ! I Am A Whatsapp Bot Created By sam pandey and recoded by  EXCEL To Do Everything That Is Possible On WhatsApp Based On WhatsApp Multi Device(MD) Support.
 
   <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BFFDAFF&center=true&width=910&height=100&lines=THIS IS+KING-MD ;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+NAVEED+DOGAR ;PUBLIC+RELESED; COMING+SOON...;TEAM KING-MD." alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BFFDAFF&center=true&width=910&height=100&lines=THIS IS+KING-MD ;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+EXCEL;PUBLIC+RELESED; COMING+SOON...;TEAM BLACK-MD." alt="Typing SVG" /></a>
   </p>
   <br>
 
@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="" target="_blank">
-    <img alt="Forks" src="https://img.shields.io/github/forks/naveeddogar/KING-MD" />
+    <img alt="Forks" src="https://img.shields.io/github/forks/excelottah6/BLACK-MD" />
   </a>
   
   
@@ -33,14 +33,14 @@
 ---
 # ```Scan QR Code```
 
-1. ***Get [SESSION-ID](https://replit.com/@naveeddogar/KING-MD-QR?output%20only=1&lite=1#index.js) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
+1. ***Get [SESSION-ID](https://replit.com/@Excelottah/BLACK-MD-QR) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
 --- 
 # ```Fork Repo```
-2. ***Click [FORK](https://github.com/naveeddogar/KING-MD/fork)***
+2. ***Click [FORK](https://github.com/excelottah6/BLACK-MD/fork)***
  
 ---
 
-# THIS TIME DON'T DEPLOY 
+# THIS TIME  DEPLOY 
 # ```Deployments METHODS```
 
  <details close>
@@ -53,7 +53,7 @@
 </h4>
 
 <p align="center" >
-    <a href="https://repl.it/github/naveeddogar/KING-MD">
+    <a href="https://repl.it/github/excelottah6/BLACK-MD">
     <img src="https://repl.it/badge/github/quiec/whatsasena" width="170px" alt="Deploy on REPLIT" >
     </a>
 </p>
@@ -75,7 +75,7 @@
 
 <p align="center" >
     <a href="https://github.com/codespaces/new">
-    <img src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" width="170px" alt="Deploy on CodesSpaces" >
+    <img src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=red&style=for-the-badge&logo=visualstudiocode" width="170px" alt="Deploy on CodesSpaces" >
     </a>
 
 </p>
@@ -96,7 +96,7 @@
 </p>
 
 <p align="center" >
-    <a href="https://heroku.com/deploy?template=https://github.com/naveeddogar/KING-MD">
+    <a href="https://heroku.com/deploy?template=https://github.com/excelottah6/BLACK-MD">
     <img src="https://www.herokucdn.com/deploy/button.png" width="170px" alt="Deploy on Heroku" >
     </a>
 
