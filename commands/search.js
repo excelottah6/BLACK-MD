@@ -33,7 +33,7 @@ cmd({
             imdbt += "📅Year       : " + fids.data.Year + "\n";
             imdbt += "⭐Rated      : " + fids.data.Rated + "\n";
             imdbt += "📆Released   : " + fids.data.Released + "\n";
-            imdbt += "⏳Runtime    : " + fids.data.Runtime + "\n";
+            imdbt += "⏱Runtime    : " + fids.data.Runtime + "\n";
             imdbt += "🌀Genre      : " + fids.data.Genre + "\n";
             imdbt += "👨🏻‍💻Director   : " + fids.data.Director + "\n";
             imdbt += "✍Writer     : " + fids.data.Writer + "\n";
@@ -71,7 +71,7 @@ cmd({
                 `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`
             );
             let textw = "";
-            textw += `*🌟Weather of  ${text}*\n\n`;
+            textw += `*🌦Weather of  ${text}*\n\n`;
             textw += `*Weather:-* ${wdata.data.weather[0].main}\n`;
             textw += `*Description:-* ${wdata.data.weather[0].description}\n`;
             textw += `*Avg Temp:-* ${wdata.data.main.temp}\n`;
@@ -107,7 +107,7 @@ cmd({
                         const date = json.current_date;
                         console.log(date);
                         let textw = "";
-                        textw += `*🌟 Horoscope of  ${text}*\n\n`;
+                        textw += `*📡 Horoscope of  ${text}*\n\n`;
                         textw += `*Current Date:* ${json.current_date}.\n`;
                         textw += `*Sign:* ${text}.\n`;
                         textw += `*Lucky Time:* ${json.lucky_time}.\n`;
@@ -134,7 +134,7 @@ cmd({
         filename: __filename,
     },
     async(Void, citel, text) => {
-        if (!text) return citel.reply(`give me a query\n*Example : .google Who is Naveed Dogar.*`);
+        if (!text) return citel.reply(`give me a query\n*Example : .google Who is EXCEL OTTAH.*`);
         let google = require('google-it');
         google({ 'query': text}).then(res => {
             let msg= `Google Search From : ${text} \n\n`;
@@ -158,7 +158,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply("Provide me a query!")
-            if (!text) return reply("Hey bie please tell me for which pic you're looking");
+            if (!text) return reply("Hey  please tell me for which pic you're looking");
             let name1 = text.split("|")[0]
             let name2 = text.split("|")[1] || `1`
             citel.reply(`Sending ${name2} image(s) of ${name1} in chat`)
@@ -190,12 +190,12 @@ cmd({
         pattern: "iswa",
         category: "search",
         desc: "Searches in given rage about given number.",
-        use: '9212345678xx',
+        use: '2342345678xx',
         filename: __filename,
     },
     async(Void, citel, text) => {
         var inputnumber = text.split(" ")[0]
-        if (!inputnumber.includes('x')) return citel.reply('You did not add x\nExample: iswa 9291285162xx')
+        if (!inputnumber.includes('x')) return citel.reply('You did not add x\nExample: iswa 2341285162xx')
         citel.reply(`Searching for WhatsApp account in given range...`)
 
         function countInstances(string, word) {
