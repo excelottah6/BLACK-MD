@@ -39,7 +39,7 @@ cmd({
             let buttonMessaged = {
                 image: { url: 'https://secktorbot.onrender.com/' },
                 caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
-                footer: ` Session bY >> Tᴇᴀᴍ Xʟɪᴄᴏɴ`,
+                footer: ` Session bY >> Tᴇᴀᴍ BLACK`,
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
