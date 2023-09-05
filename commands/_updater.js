@@ -20,9 +20,9 @@ cmd({
             filename: __filename
         },
         async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply('This command is only for my owner')
+            if (!isCreator) return citel.reply('This command is owner only')
             let commits = await DB.syncgit()
-            if (commits.total === 0) { citel.reply(`Hey ${citel.pushName}. You have latest version installed.`)} 
+            if (commits.total === 0) { citel.reply(`Hey ${citel.pushName}. BOSS have latest version installed.`)} 
             else {
                 let update = await DB.sync()
                 return await Void.sendMessage(citel.chat, { text: update,});
