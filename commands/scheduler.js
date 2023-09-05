@@ -11,7 +11,7 @@
 
  const { tlang,sck,prefix,cmd } = require('../lib')
  cmd({
-     pattern: "amute",
+     pattern: "mute",
      desc: "sets auto mute time in group.",
      category: "moderation",
  },
@@ -34,7 +34,7 @@
 
  //--------------------------------------------------------------------------------
  cmd({
-    pattern: "aunmute",
+    pattern: "unmute",
     desc: "sets unmute time in group.",
     category: "moderation",
 },
