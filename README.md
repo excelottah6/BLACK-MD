@@ -33,7 +33,7 @@
 ---
 # ```Scan QR Code```
 
-1. ***Get [SESSION-ID](https://replit.com/@Excelottah/BLACK-MD-QR) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
+1. ***Get [SESSION-ID](https://replit.com/@Excelottah/BLACK-MD) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
 --- 
 # ```Fork Repo```
 2. ***Click [FORK](https://github.com/excelottah6/BLACK-MD/fork)***
