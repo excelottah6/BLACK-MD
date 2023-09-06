@@ -19,7 +19,7 @@ cmd({
     alias :['gpt'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,Secktor>',
+    use: '<Hii,Black>',
     filename: __filename,
 },
 async(Void, citel,text) => {
@@ -28,7 +28,7 @@ async(Void, citel,text) => {
         let {data} = await axios.get(`http://api.brainshop.ai/get?bid=167991&key=aozpOoNOy3dfLgmB&uid=[${citel.sender.split("@")[0]}]&msg=[${text}]`);
         return citel.reply(data.cnt);  
     }
-    if (!text) return citel.reply(`Hey there! ${citel.pushName}. How are you doing these days?`);
+    if (!text) return citel.reply(`Hey there! ${citel.pushName}. How are you doing today?`);
     // const { Configuration, OpenAIApi } = require("openai");
     // const configuration = new Configuration({
     //     apiKey: Config.OPENAI_API_KEY || "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",
@@ -118,10 +118,10 @@ cmd({
         let cap = `Hey ${citel.pushName}\n
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* citel-x.herokuapp.com/repo
-*Group:* citel-x.herokuapp.com/support
+*🍁 Repo:* https://github.com/excelottah6/BLACK-MD
+*Group:* https://chat.whatsapp.com/FixEhA9BNH46sYyLOAqCps
 *Deploy Your Own:*-
-citel-x.herokuapp.com`
+https://github.com/excelottah6/BLACK-MD`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -129,7 +129,7 @@ citel-x.herokuapp.com`
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "Secktor-Repo",
+                    title: "BLACK-Repo",
                     body: "Easy to Use",
                     thumbnail: log0,
                     mediaType: 4,
@@ -200,8 +200,9 @@ cmd({
 async(Void, citel,text,{isCreator}) => {
 
 if(!isCreator) return citel.reply(tlang().owner);
-let str="*All available themes in Secktor*"
-str+=`1. SECKTOR\n2. ADAM\n3. AYANOKOJI\n4. EDITH\n5. FRIDAY\n6. GENOS\n7. GIDEON\n8. GOKU\n9. LUFFY\n10. NARUTO\n11. NEZUKO\n12. PARKER\n13. ZEROTWO\n14. Eren Jeager(Coming Soon)\n\n these are the themes of Secktor Userbot.\_Reply ${prefix}setvar THEME:ZEROTWO`
+let str="*All available themes in BLACKMD*"
+str+=`1. GOJO\n2. ADAM\n3. CODM\n4. EDITH\n5. FRIDAY\n6. GENOS\n7. GIDEON\n8. GOKU\n9. LUFFY\n10. NARUTO\n11. NEZUKO\n12. PARKER\n13. GARENA\n14.  Rumbling(Coming Soon)\n\n these are the themes of BLACK Userbot.\_Reply ${prefix}setvar THEME:GARENA`
+return citel.reply(str)
 return citel.reply(str)
     
 }
