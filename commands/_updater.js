@@ -18,16 +18,16 @@
 
 CURRENTLY RUNNING ON BETA VERSION!!
 *
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @project_name : BLACK-Md
+   * @author : excel ottah
    * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
+   * @description : BLACK-Md ,A Multi-functional whatsapp user bot.
    * @version 1.0.8
 *
    * Licensed under the  GPL-3.0 License;
 * 
-   * Created By Suhail Tech Info.
-   * © 2023 Suhail-Md.
+   * Created By Excel.
+   * © 2023 BLACK-Md.
 * 
    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -65,8 +65,8 @@ smd({
             if (!isCreator) return msg.reply(`This command is only for my owner`)
             let commits = await DB.syncgit()
             if (commits.total === 0) return await msg.reply(`*BOT IS UPTO DATE...!!*`) 
-            let update = `*SUHAIL_MD New Updates:*\n\n${await DB.sync()}`
-            await Suhail.bot.sendMessage(msg.chat, { text: update, },{ quoted : msg });
+            let update = `*BLACK_MD New Updates:*\n\n${await DB.sync()}`
+            await Black.bot.sendMessage(msg.chat, { text: update, },{ quoted : msg });
             if(Config.HEROKU_APP_NAME && Config.HEROKU_API_KEY && text == 'start')
             {
                await msg.reply('Heroku Build started...');
@@ -84,7 +84,7 @@ smd({
 
         
      smd({
-                 pattern: "updatenow",
+                 pattern: "startupdate",
                  desc: "Shows repo\'s refreshed commits.",
                  category: "tools",
                  filename: __filename
@@ -94,7 +94,7 @@ smd({
                 let commits = await DB.syncgit()
                 if (commits.total === 0) return await msg.reply(`*YOU HAVE LATEST VERSION INSTALLED!*`)
                 let update = await DB.sync()
-                await msg.send(" *SUHAIL_MD Updater Started...!*\n\n*Please wait you have new updates*\n *───────────────────────────*\n"+update +"\n\n\n"+Config.caption);
+                await msg.send(" *BLACK_MD Updater Started...!*\n\n*Please wait you have new updates*\n *───────────────────────────*\n"+update +"\n\n\n"+Config.caption);
                 await sleep(3000);
           try{
                let res = await updateHerokuApp('no');
