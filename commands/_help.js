@@ -58,10 +58,10 @@ Secktor.cmd({
 │ 🌟 ʙʟᴀᴄᴋ ᴍᴅ 🌟
 ├────╯
 │ 🧑‍💻 Owner: excel
-│ 🤖 User: EXCEL
-│ ⚙️ Prefix: ( ! )
+│ 🤖 User: ${pushname} 
+│ ⚙️ Prefix:  (${prefix})
 │ 📊 Plugins: 272
-│ ⏱️ Uptime: 4 h, 12 m, 17 s
+│ ⏱️ Uptime: ${runtime(process.uptime())} 
 │ 💾 Memory: 59.54 GB
 │ 📅 Date: 16/09/2023
 │ 🆚 Version: 1.0.0
@@ -72,13 +72,13 @@ Secktor.cmd({
             if (text.toLowerCase() == category.toLowerCase()) {
                 str = `╭─────♛⃟ *${tiny(category)}* ♛⃟\n`;
                 for (const plugins of cmds[category]) {
-                    str += `┃⚝│ ${fancytext(plugins, 1)}\n`;
+                    str += `┃│ ${fancytext(plugins, 1)}\n`;
                 }
                 str += `╰━━━━━━━━━━━━━──⊷\n`;
                 break;
             } else {
                 for (const plugins of cmds[category]) {
-                    str += `┃⚝│ ${fancytext(plugins, 1)}\n`;
+                    str += `┃│ ${fancytext(plugins, 1)}\n`;
                 }
                 str += `╰━━━━━━━━━━━━━━──⊷\n`;
             }
@@ -93,7 +93,7 @@ Secktor.cmd({
 });
 
 Secktor.cmd({
-    pattern: "list",
+    pattern: "content",
     desc: "list menu",
     category: "general"
 }, async (Void, citel) => {
@@ -168,7 +168,7 @@ async(Void, citel, text) => {
  const { commands } = require('../lib');
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-        if (!cmd) return await citel.reply("*❌No Such commands.*");
+        if (!cmd) return await citel.reply("*🥲No Such commands.*");
         else arr.push(`*🍁Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
         if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
