@@ -63,7 +63,7 @@ Secktor.cmd({
 │ 📊 Plugins: 272
 │ ⏱️ Uptime: ${runtime(process.uptime())} 
 │ 💾 Memory: 59.54 GB
-│ 📅 Date: 16/09/2023
+│ 📅 Date: ${date}
 │ 🆚 Version: 1.0.0
 ╰─────────◆
 ` + '```';
