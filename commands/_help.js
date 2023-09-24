@@ -60,7 +60,7 @@ Secktor.cmd({
 │ 🧑‍💻 Owner: excel
 │ 🤖 User: ${pushname} 
 │ ⚙️ Prefix:  (${prefix})
-│ 📊 Plugins: 272
+│ 📊 Plugins:  ${commands.length}
 │ ⏱️ Uptime: ${runtime(process.uptime())} 
 │ 💾 Memory: 59.54 GB
 │ 📅 Date: ${date}
