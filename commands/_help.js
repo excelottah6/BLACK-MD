@@ -4,7 +4,7 @@
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
  * @project_name : Black-MD
- * @author : naveeddogar <https://github.com/excelottah>
+ * @author : excel <https://github.com/excelottah>
  * @description : BLACK,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
@@ -59,7 +59,7 @@ Secktor.cmd({
 ├────╯
 │ 🧑‍💻 Owner: excel
 │ 🤖 User: ${pushname} 
-│ ⚙️ Prefix:  (${prefix})
+│ ⚙️ Prefix:  ${prefix}
 │ 📊 Plugins:  ${commands.length}
 │ ⏱️ Uptime: ${runtime(process.uptime())} 
 │ 💾 Memory: 59.54 GB
