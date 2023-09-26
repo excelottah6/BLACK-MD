@@ -6,10 +6,10 @@
                "type": "commonjs",
                "license": "GPL-3.0",
                "scripts": {
-                  "start": "pm2 start lib/client.js --deep-monitoring --attach --name xlicon",
-                  "stop": "pm2 stop xlicon"
+                  "start": "pm2 start lib/client.js --deep-monitoring --attach --name BLACK",
+                  "stop": "pm2 stop Black"
                },
-               "author": "salmanytofficial",
+               "author": "excelottah",
                "dependencies": {
                        "@sampandey001/baileys": "latest", 
                        "@adiwajshing/keyed-db": "^0.2.4",
@@ -69,10 +69,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/salmanytofficial/XLICON-MD.git"
+                 "url": "git+https://github.com/excelottah6/BLACK-MD.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/salmanytofficial/XLICON-MD/issues"
+                 "url": "https://github.com/excelottah6/BLACK-MD/issues"
                   },
-                 "homepage": "https://github.com/salmanytofficial/XLICON-MD#readme"
+                 "homepage": "https://github.com/excelottah6/BLACK-MD#readme"
                   }
