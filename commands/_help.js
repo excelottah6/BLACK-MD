@@ -20,8 +20,8 @@ const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
 Secktor.cmd({
-    pattern: "help",
-    alias: ["menu"],
+    pattern: "helpme",
+    alias: ["botmenu"],
     desc: "Help list",
     category: "general",
     react: "📟",
@@ -53,17 +53,18 @@ Secktor.cmd({
         const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
         let total = await sck1.countDocuments()
         let str = `╭────╮\n`;
-        str +=
-            '```' + `
+        str +=         '```' + `
 │ 🌟 ʙʟᴀᴄᴋ ᴍᴅ 🌟
 ├────╯
 │ 🧑‍💻 Owner: excel
-│ 🤖 User: ${pushname} 
+│ 🤖 User: ${citel.pushName}
 │ ⚙️ Prefix:  ${prefix}
 │ 📊 Plugins:  ${commands.length}
 │ ⏱️ Uptime: ${runtime(process.uptime())} 
-│ 💾 Memory: 59.54 GB
+│ 💾 Memory: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ 📅 Date: ${date}
+│ 🎠 Theme:${tlang().title}
+│ 👨‍💻 Commands: ${Config.ownername}
 │ 🆚 Version: 1.0.0
 ╰─────────◆
 ` + '```';
