@@ -204,6 +204,30 @@ let str="*All available themes in BLACKMD*"
 str+=`1. GOJO\n2. ADAM\n3. CODM\n4. EDITH\n5. FRIDAY\n6. GENOS\n7. GIDEON\n8. GOKU\n9. LUFFY\n10. NARUTO\n11. NEZUKO\n12. PARKER\n13. GARENA\n14.  Rumbling(Coming Soon)\n\n these are the themes of BLACK Userbot.\_Reply ${prefix}setvar THEME:GARENA`
 return citel.reply(str)
 return citel.reply(str)
-    
 }
 )
+//---------------------------------------------------------------------------
+
+const { cmd } = require('../lib'); // Import necessary 
+cmd({
+  pattern: "send aza ",
+  desc: "Send a custom message",
+  category: 'General',
+  use: '<send Your message here>',
+  filename: __filename,
+}, 
+	async (Void, citel, match) => {
+	
+  const userMessage = match[1];
+  if (userMessage) {
+    
+    await citel.reply(userMessage);
+  } else {
+    // If no message is provided, provide usage instructions
+    await citel.reply('Usage: send Your message here');
+  }
+});
+
+
+
+
