@@ -26,3 +26,29 @@ cmd({
         citel.reply('_Here is your link._\n'+data)
     }
 );
+
+
+ 
+
+
+
+
+const { cmd } = require('../lib'); 
+
+cmd({
+    pattern: "sendaza",
+    desc: "Send a custom message",
+    category: 'General',
+    use: '<send Your message here>', 
+    filename: __filename,
+}, 
+async (Void, citel, match) => {
+    const userMessage = match[1];
+    if (userMessage) {
+        await citel.reply(userMessage);
+    } else {
+        
+        await citel.reply('Usage: send Your message here');
+    }
+});
+
