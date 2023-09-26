@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: blade-Support*\n*Group Link:* https://chat.whatsapp.com/ErxOiX1qQgk9phDJhnUiDQ`,
+            caption: `*Group Name: BLACK-md Support*\n*Group Link:* https://chat.whatsapp.com/ErxOiX1qQgk9phDJhnUiDQ`,
         });
 
     }
@@ -168,7 +168,7 @@ cmd({
         if (!isAdmins) return citel.reply(tlang().admin);
 
         let textt = `
-══✪〘   *Tag All*   〙✪══
+〘   *Tag All*   
 
 ➲ *Message :* ${text ? text : "blank"}\n\n
 ➲ *Author:* ${citel.pushName} 🔖
