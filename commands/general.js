@@ -210,7 +210,7 @@ return citel.reply(str)
 
 const { cmd } = require('../lib'); // Import necessary 
 cmd({
-  pattern: "send aza ",
+  pattern: "sendaza",
   desc: "Send a custom message",
   category: 'General',
   use: '<send Your message here>',
