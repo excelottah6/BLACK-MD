@@ -38,7 +38,7 @@ const { cmd } = require('../lib');
 cmd({
     pattern: "sendaza",
     desc: "Send a custom message",
-    category: 'General',
+    category: 'extra',
     use: '<send Your message here>', 
     filename: __filename,
 }, 
