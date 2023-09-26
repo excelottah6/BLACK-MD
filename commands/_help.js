@@ -94,7 +94,7 @@ Secktor.cmd({
 });
 
 Secktor.cmd({
-    pattern: "content",
+    pattern: "list",
     desc: "list menu",
     category: "general"
 }, async (Void, citel) => {
