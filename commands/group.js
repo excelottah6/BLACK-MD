@@ -685,30 +685,36 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "hidetag",
-            alias: ["htag"],
-            desc: "Tags everyperson of group without mentioning their numbers",
-            category: "group",
-            filename: __filename,
-            use: '<text>',
-        },
-        async(Void, citel, text) => {
-            if (!citel.isGroup) return citel.reply(tlang().group);
-            const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
-            const participants = citel.isGroup ? await groupMetadata.participants : "";
-            const groupAdmins = await getAdmin(Void, citel)
-            const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-            if (!isAdmins) return citel.reply(tlang().admin);
+    pattern: "hidetag",
+    alias: ["htag"],
+    desc: "Tags every person of group without mentioning their numbers",
+    category: "group",
+    filename: __filename,
+    use: '<text>',
+},
+async (Void, citel, text, match) => {
+    if (!citel.isGroup) return citel.reply(tlang().group);
+    
+    const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
+    const participants = citel.isGroup ? await groupMetadata.participants : "";
+    const groupAdmins = await getAdmin(Void, citel);
+    const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
+    
+    if (!isAdmins) return citel.reply(tlang().admin);
 
-            if (!isAdmins) citel.reply(tlang().admin);
-            Void.sendMessage(citel.chat, {
-                text: text ? text : "",
-                mentions: participants.map((a) => a.id),
-            }, {
-                quoted: citel,
-            });
-        }
-    )
+    let taggedMessage = text ? text : "";
+    if (!text && citel.quoted && citel.quoted.text) {
+        taggedMessage = citel.quoted.text;
+    }
+
+    Void.sendMessage(citel.chat, {
+        text: taggedMessage,
+        mentions: participants.map((participant) => participant.id),
+    }, {
+        quoted: citel.quoted,
+    });
+});
+
     //---------------------------------------------------------------------------
 cmd({
             pattern: "add",
